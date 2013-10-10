@@ -151,6 +151,8 @@ Go back into your rails console and do a count on users and products, you should
 
 Your numbers might be different but it should be more than 1.
 
+## -------- Section Completed ------------ ##
+
 # 2) Modify Views and Logging
 
 Now that we have a bunch of users and associated products, lets do something useful with them. Previously we noted that [localhost:3000/products](http://localhost:3000/products) was linked to the view `app/views/products/index.html.erb` through a route in our `config/routes.rb` file. Open the `index.html.erb` view now in a text editor (i recommend sublime text 2 for mac). Make sure your rails server is started (`$ rails server`) and visit [localhost:3000/products](http://localhost:3000/products) in your browser.
