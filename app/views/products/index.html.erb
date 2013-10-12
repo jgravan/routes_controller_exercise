@@ -1,7 +1,24 @@
+<% cheap_product = Product.where('price > 60').first %>
+<% first_product = Product.first %>
+
 <h2> I AMA View </h2>
 <p>
 	<h2>Hello World!</h2>
 </p>
 <p>
   Find me in <%= Rails.root.join("app", "views", "products", __FILE__ ) %>
-</p>
+
+  	<p>
+  		Product Name: "<% first_product.name %>"" costs $<%= first_product.price %>
+	</p>
+ 	<p>
+    	The seller for this product is named '<%= first_product.user.name %>'
+	</p
+	
+	<p>
+		this is a really cheap product : <%= cheap_product.name %> owned by a really cheap owner: <%= cheap_product.user.name %>
+	</p>
+	<p>
+		We have this many products in inventory: <%= Product.count %>
+	</p>
+
